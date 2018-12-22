@@ -1,10 +1,10 @@
 # Serverless framework CI/CD with CodePipeline and CodeBuild
 
-
-
-![Pipeline Sample Image](pipeline-sample.png)
-
 ## Requirements
+
+* Copy buildspec.yml file at root of serverless project
+
+* Make sure that underscore is not used in logical name of any resource in serverless template file
 
 * AWS CLI already configured with Administrator access 
     - Alternatively, you can use a [Cloudformation Service Role with Admin access](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-iam-servicerole.html)
