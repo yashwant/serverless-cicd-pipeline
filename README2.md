@@ -2,9 +2,12 @@
 
 
 ## Requirements
+
 * Copy buildspec.yml file at root of serverless project
 
 * Make sure that underscore is not used in logical name of any resource in serverless template file
+
+* Install serverless-sam plugin in you serverless node app[serverless-sam](https://www.npmjs.com/package/serverless-sam)
 
 * AWS CLI already configured with Administrator access 
     - Alternatively, you can use a [Cloudformation Service Role with Admin access](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-iam-servicerole.html)

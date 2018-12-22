@@ -15,17 +15,18 @@
 
 ## Pipeline creation
 
-Go to CloudFormation console. Select create new stack and upload template file. Enter following parameter values: GithubRepo, GithubToken, GithubUser, AppName. 
+Go to CloudFormation console. Select create new stack and upload template file. Enter following parameter values: GithubRepo, GithubToken, GithubUser, AppName, UATTopic, ProdTopic, UATApprovalEmail, ProdApprovalEmail. 
 
 GithubRepo - GitHub repository name
 GithubToken - GitHub Token
 GithubUser - GitHub user name
 AppName - Application/Stack Name
-
+UATTopic - User Acceptance Testing Approval[Gamma Stage] email notification SNS topic name
+UATApprovalEmail - User Acceptance Testing Stage[Gamma Stage] Approver email id
+ProdTopic - Production Approval[Prod Stage] email notification SNS topic name
+ProdApprovalEmail - Production Stage[Prod Stage] Approver email id
 
 Make sure you check ==> "I acknowledge that AWS CloudFormation might create IAM resources." option"
-
-Also make sure you opt in to receive emails from AWS SNS topics. Once stacks get created you will receive an email to confirm subscription to SNS topic emails. You need to confirm the subscription by clicking the link in the email
 
 ## Release through the newly built Pipeline
 
